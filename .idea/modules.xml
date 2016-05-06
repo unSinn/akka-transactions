@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-transaction.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-transaction_main.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-transaction_main.iml" group="akka-transaction" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-transaction_test.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-transaction_test.iml" group="akka-transaction" />
     </modules>
   </component>
 </project>
