@@ -10,9 +10,18 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="akka-transaction_main" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.18" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.18" level="project" />
+    <orderEntry type="library" name="Gradle: com.typesafe.akka:akka-actor_2.11:2.4.4" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.jayway.awaitility:awaitility:1.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.18" level="project" />
+    <orderEntry type="library" name="Gradle: org.scala-lang:scala-library:2.11.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.typesafe:config:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.scala-lang.modules:scala-java8-compat_2.11:0.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-library:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: cglib:cglib-nodep:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.objenesis:objenesis:2.1" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="akka-transaction_main" />
 </module>

@@ -5,9 +5,8 @@ public class Main {
 
 
     public static void main(String... args) {
-        Work work = new Work();
         try {
-            work.doWork();
+            AkkaSystem.getServiceActor().doAllWork();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
