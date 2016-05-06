@@ -11,16 +11,23 @@ public class AkkaSystem {
 
     public static final ActorSystem system = ActorSystem.create("akka-transaction", ConfigFactory.load());
 
-    private static int workerNr = 0;
+    private static Service serviceInstance;
+
+    private static ServiceController controllerInstance;
 
     public static Service getServiceActor() {
-        return TypedActor.get(system).typedActorOf(new TypedProps<>(Service.class, ServiceImpl.class));
+        if (serviceInstance == null) {
+            serviceInstance = TypedActor.get(system)
+                    .typedActorOf(new TypedProps<>(Service.class, ServiceImpl.class));
+        }
+        return serviceInstance;
     }
 
-    public static Worker getWorkActor() {
-        final int nr = workerNr++;
-        return TypedActor.get(system).typedActorOf(new TypedProps<>(Worker.class,
-                        (Creator<WorkerImpl>) () -> new WorkerImpl(nr)),
-                "worker-" + nr);
+    public static ServiceController getServiceControllerActor() {
+        if (controllerInstance == null) {
+            controllerInstance = TypedActor.get(system)
+                    .typedActorOf(new TypedProps<>(ServiceController.class, ServiceControllerImpl.class));
+        }
+        return controllerInstance;
     }
 }

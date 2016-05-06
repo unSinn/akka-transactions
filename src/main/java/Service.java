@@ -1,11 +1,14 @@
 import scala.concurrent.Future;
+import scala.concurrent.Promise;
 
-import java.util.concurrent.Callable;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by fabi on 06/05/16.
  */
 public interface Service {
 
-    Future<Integer> doAllWork() throws InterruptedException;
+    Future<Integer> doSomeWork();
+
+    AtomicBoolean isBusy();
 }
